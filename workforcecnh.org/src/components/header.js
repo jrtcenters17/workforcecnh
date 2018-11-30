@@ -5,11 +5,10 @@ import NavBar from './navbar'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'teal',
-      marginBottom: '1.45rem',
+      background: '#305d60',
+      marginBottom: 'none',
     }}
   >
-  <NavBar/>
     <div
       style={{
         margin: '0 auto',
@@ -21,11 +20,12 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: 'white',
+            color: '#afeff4',
             textDecoration: 'none',
           }}
         >
           {siteTitle}
+          <NavBar/>
         </Link>
       </h1>
     </div>
