@@ -8,22 +8,24 @@ text-decoration: none;
 
 
 
-const NavTop = styled.ul`
+const NavTop = styled.div`
 list-style: none;
 display: flex;
 justify-content: space-evenly;
-text-decoration: none;
 `
-
+const NavLink = styled(Link)`
+    color: 	#3d8389;
+    text-decoration: none;
+`
 export default function navbar() {
   return (
     <NavNav>
       <NavTop>
-          <li><Link to ="/">Home</Link></li>
-          <li><Link to ="/about">About</Link></li>
-          <li><Link to ="/programs">Programs</Link></li>
-          <li><Link to ="/jobs">Jobs</Link></li>
-          <li><Link to ="/news">News</Link></li>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/programs">Programs</NavLink>
+          <NavLink to="/jobs">Jobs</NavLink>
+          <NavLink to="/news">News</NavLink>
       </NavTop>
     </NavNav>
   )

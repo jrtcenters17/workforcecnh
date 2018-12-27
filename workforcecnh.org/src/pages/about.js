@@ -6,7 +6,7 @@ import chiSearvue from '../images/ChiSearvue.jpg'
 
 const About = () => (
   <Layout>
-  
+  cn
     <h1 style ={{
       alignContent: 'center'
     }}> Hi from the second page</h1>
